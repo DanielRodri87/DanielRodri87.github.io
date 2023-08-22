@@ -1,38 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Golpe para trouxa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <!-- Inclua os links para os arquivos CSS do Bootstrap e do seu próprio estilo -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .btn-transparent {
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .btn-transparent:hover {
+      background-color: #fff;
+      color: #333;
+    }
+    .cube {
+      background-color: #f7f7f7;
+      color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .cube:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
 <body>
-    <div class="head">
-        <h1>GOV<p>B<p id="p2">R</p>
-        <img src="https://static.todamateria.com.br/upload/ba/nd/bandeiradobrasil-2-cke.jpg" width="150" height="150" >
-        <h2>VALE CESTA BÁSICA, DEU A LOUCA NO BOLSONARO</h2>
-
-        <h4>Preencha todos os seus dados, no último poderá separar por espaços, como por exemplo: BB, 1210-X, 35.7000, 1234567</h4>
-    </div>
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+          <img src="danielfoto1.jpg" alt="Minha Foto" class="img-fluid rounded-circle mb-3" width="150">
+          <h1 class="display-4">Daniel Rodrigues</h1>
+          <p class="lead">Discente da Universidade Federal do Piauí</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="mt-4">
+            <a href="#" class="btn btn-transparent mr-3">Formações</a>
+            <a href="#" class="btn btn-transparent mr-3">Habilidades</a>
+            <a href="#" class="btn btn-transparent mr-3">Meus Projetos</a>
+            <a href="#" class="btn btn-transparent">Entrar em Contato</a>
+          </div>
+        </div>
+      </header>
     
-    <form class="golpe" action="\resultados.html" method="post">
-        <div>
-            <label for="CPF">CPF:</label>
-            <input type="text" id="CPF" />
+
+  <!-- Seção de Formações Acadêmicas -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="cube">
+          <img src="ifpilogo.png" alt="Logo IFPI" class="img-fluid rounded-circle mb-3" width="150">
+          <h3>Formação Técnica Concluída</h3>
+          <p>Informática para Internet</p>
+          <p>Instituto Federal do Piauí - CAPAU</p>
         </div>
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" />
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="cube">
+          <img src="logoufpi.png" alt="Logo UFPI" class="img-fluid rounded-circle mb-3" width="150">
+          <h3>Formação em Andamento</h3>
+          <p>Sistemas de Informação</p>
+          <p>Universidade Federal do Piauí - CSHNB</p>
         </div>
-        <div>
-            <label for="msg">CONTA | AGENCIA | BANCO | SENHA:</label>
-            <textarea id="msg"></textarea>
-        </div>
-        <div class="button" id="enviar">
-            <button type="submit">Enviar seus dados</button>
-        </div>
-    </form>
-<script src="script.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seu conteúdo do portfólio aqui -->
+
+  <!-- Inclua os scripts do Bootstrap e do Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
