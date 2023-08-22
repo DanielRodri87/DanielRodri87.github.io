@@ -6,52 +6,11 @@
   <title>Meu Portfólio</title>
   <!-- Inclua os links para os arquivos CSS do Bootstrap e do seu próprio estilo -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    
-    .btn-transparent {
-      background-color: transparent;
-      border: 2px solid #fff;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    .btn-transparent:hover {
-      background-color: #fff;
-      color: #333;
-    }
-    .cube {
-      background-color: #f7f7f7;
-      color: #333;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .cube:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-
-    }
-    .header-wave {
-      position: relative;
-      background: linear-gradient(to bottom, #f7f7f7, #fff); /* Gradiente de cinza para branco */
-      overflow: hidden;
-    }
-    .wave {
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      width: 100%;
-      height: 150px; /* Altura da onda */
-      background: url('wave.svg') center bottom no-repeat; /* Imagem de fundo da onda */
-      transform: scaleX(-1); /* Espelhar horizontalmente */
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-5">
+    <header class="header-wave text-white text-center py-5">
         <div class="container">
           <img src="danielfoto1.jpg" alt="Minha Foto" class="img-fluid rounded-circle mb-3" width="150">
           <h1 class="display-4">Daniel Rodrigues</h1>
@@ -74,10 +33,12 @@
             </li>
           </ul>
           <div class="mt-4">
-            <a href="#" class="btn btn-transparent mr-3">Formações</a>
-            <a href="#" class="btn btn-transparent mr-3">Habilidades</a>
-            <a href="#" class="btn btn-transparent mr-3">Meus Projetos</a>
-            <a href="#" class="btn btn-transparent">Entrar em Contato</a>
+            <div class="button">
+              <a href="#" class="btn custom-btn text-white mr-3">Formações</a>
+              <a href="#" class="btn custom-btn mr-3">Habilidades</a>
+              <a href="#" class="btn custom-btn mr-3">Meus Projetos</a>
+              <a href="#" class="btn custom-btn">Entrar em Contato</a>
+            </div>
           </div>
         </div>
       </header>
@@ -85,6 +46,7 @@
 
   <!-- Seção de Formações Acadêmicas -->
   <section class="container my-5">
+    <h2 class="text-center mb-4">Formações</h2>
     <div class="row">
       <div class="col-md-6 mb-4">
         <div class="cube">
@@ -104,6 +66,75 @@
       </div>
     </div>
   </section>
+
+  <!-- Seção de Habilidades -->
+<section class="section-white text-center py-5">
+  <h2 class="text-center mb-4">Habilidades</h2>
+  <div class="row">
+    <!-- Skill: Python -->
+    <div class="col-md-4 mb-4">
+      <div class="cube">
+        <img src="python.png" alt="Logo Python" class="img-fluid mb-3" width="150">
+        <h3>Python</h3>
+      </div>
+    </div>
+    <!-- Skill: C -->
+    <div class="col-md-4 mb-4">
+      <div class="cube">
+        <img src="c.png" alt="Logo C" class="img-fluid mb-3" width="150">
+        <h3>C</h3>
+      </div>
+    </div>
+    <!-- Skill: HTML -->
+    <div class="col-md-4 mb-4">
+      <div class="cube">
+        <img src="html.png" alt="Logo HTML" class="img-fluid mb-3" width="150">
+        <h3>HTML</h3>
+      </div>
+    </div>
+    <!-- Skill: CSS -->
+    <div class="col-md-4 mb-4">
+      <div class="cube">
+        <img src="css.png" alt="Logo CSS" class="img-fluid mb-3" width="150">
+        <h3>CSS</h3>
+      </div>
+    </div>
+    <!-- Skill: JavaScript -->
+    <div class="col-md-4 mb-4">
+      <div class="cube">
+        <img src="js.png" alt="Logo JavaScript" class="img-fluid mb-3" width="220">
+        <h3>JavaScript</h3>
+      </div>
+    </div>
+    <!-- Skill: Flutter -->
+    <div class="col-md-4 mb-4">
+      <div class="cube">
+        <img src="flutter.png" alt="Logo Flutter" class="img-fluid mb-3" width="150">
+        <h3>Flutter</h3>
+      </div>
+    </div>
+    <!-- Skill: Django -->
+    <div class="col-md-4 mb-4">
+      <div class="cube">
+        <img src="django.png" alt="Logo Django" class="img-fluid mb-3" width="150">
+        <h3>Django</h3>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="cube">
+        <img src="github.png" alt="Logo Github" class="img-fluid mb-3" width="150">
+        <h3>Git</h3>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="cube">
+        <img src="linux.png" alt="Linux" class="img-fluid mb-3" width="150">
+        <h3>Linux</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Seu conteúdo do portfólio aqui -->
 
